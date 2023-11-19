@@ -25,6 +25,6 @@ app.use('/api/events', require('./routes/events') );
 // TODO: CRUD: Eventos
 
 // Escuchar peticiones
-app.listen(process.env.PORT, () => {
+app.listen(process.env.PORT, '0.0.0.0', () => {
     console.log(`Servidor express escuchando en el puerto ${ process.env.PORT }`);
 });
